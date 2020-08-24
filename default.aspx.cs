@@ -92,7 +92,7 @@ namespace ForgeSample1
             // ready!!!!
 
             // register a client-side script to show this model
-            Page.ClientScript.RegisterStartupScript(this.GetType(), "ShowModel", string.Format("<script>showModel('{0}');</script>", objectIdBase64));
+            Page.ClientScript.RegisterStartupScript(this.GetType(), "ShowModel", string.Format("<script>ShowModel('{0}');</script>", objectIdBase64));
 
             // clean up
             Directory.Delete(Path.GetDirectoryName(fileSavePath), true);
