@@ -1,5 +1,5 @@
 ﻿var viewer;
-function Showmodel(urn) {}
+function ShowModel(urn) {
 var options = {
     env: 'AutodeskProduction',
     accessToken: getAccessToken
@@ -67,3 +67,4 @@ function onLoadModelSuccess(model) {
 function onLoadModelError(viewerErrorCode) {
     console.error('onLoadModelError() - errorCode:' + viewerErrorCode);
 }
+    }
