@@ -8,6 +8,7 @@ var documentId = 'urn:' + urn;
 Autodesk.Viewing.Initializer(options, function onInitialized() {
     Autodesk.Viewing.Document.load(documentId, onDocumentLoadSuccess, onDocumentLoadFailure);
 });
+}
 
 // Get token
 function getAccessToken() {
@@ -67,4 +68,4 @@ function onLoadModelSuccess(model) {
 function onLoadModelError(viewerErrorCode) {
     console.error('onLoadModelError() - errorCode:' + viewerErrorCode);
 }
-    }
+
